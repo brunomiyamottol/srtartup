@@ -65,7 +65,7 @@ export default class MyApp extends App {
           `,
         }}
       />
-
+      <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2ab75663-4215-475a-b69d-46bd34e3c1b4"  type="text/javascript"></script>
 
           {/* <script
             async
