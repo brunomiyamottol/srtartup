@@ -72,7 +72,7 @@ export default class MyApp extends App {
               {/* Google Analytics */}
               <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_ID}`}
           />
           <script
             dangerouslySetInnerHTML={{
