@@ -59,6 +59,12 @@ class MyDocument extends Document {
             }}
           ></script>
           {/* Cookiebot Script */}
+          <script id="CookieDeclaration" src="https://consent.cookiebot.com/2ab75663-4215-475a-b69d-46bd34e3c1b4/cd.js" type="text/javascript" async></script>
+          <script
+          async
+          src={`https://consent.cookiebot.com/uc.js?cbid=2ab75663-4215-475a-b69d-46bd34e3c1b4&f=sync&lang=en`}
+          type="text/javascript"
+        ></script>
           <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2ab75663-4215-475a-b69d-46bd34e3c1b4" data-blockingmode="auto" type="text/javascript"></script>
         </Head>
         <body

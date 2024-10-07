@@ -6,7 +6,7 @@ import GetSrtartedNow from "./GetStarted";
 // import ScheduleADemo from "./ScheduleADemo";
 
 
-const stateVideoURL = "https://app.kaaria.ai/#/login?createAccount=true"
+const stateVideoURL = "https://app.kaaria.ai/login?createAccount=true"
 
 export default function Banner() {
   const { t } = useTranslation();
@@ -24,7 +24,7 @@ export default function Banner() {
 
   return (    
     <>
-      <div class="pt-24">
+      <div  class="pt-24">
         <div class="container px-4 mx-auto flex flex-wrap flex-col lg:flex-row items-center">
           <div class="w-full sm:w-full lg:w-2/5 py-6 flex  flex-wrap justify-center lg:justify-end" style={{ zIndex: 1 }}>
           <GetSrtartedNow />
