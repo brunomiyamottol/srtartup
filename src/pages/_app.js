@@ -7,7 +7,8 @@ import "../styles/custom-styles.css";
 import React from "react";
 import App from "next/app";
 import Head from "next/head";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics, pageview } from "@vercel/analytics/react";
+import Script from 'next/script';
 
 export default class MyApp extends App {
   // Preloader
@@ -44,6 +45,27 @@ export default class MyApp extends App {
 
           <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
           <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+
+
+          <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TAG}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+
 
           {/* <script
             async

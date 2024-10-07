@@ -12,7 +12,12 @@ export default function Banner() {
   const { t } = useTranslation();
 
   function handleOpenModal() {
-    // setIsOpen(true);
+   // Track the event before opening the modal
+   window.gtag('event', 'open_modal', {
+    event_category: 'User Interaction',
+    event_label: 'Video Modal',
+    value: 1,
+  });
 
     window.open(stateVideoURL, "_blank");
   }
@@ -34,7 +39,7 @@ export default function Banner() {
                 onClick={handleOpenModal}
                 class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
               >
-                {"Start Free Trial."}
+                {"Start Free Trial"}
               </button>
             </div>
             {/* <p class="text-sm md:text-lg mb-8">{t("startupValuationWebsiteSubtitle")}</p> */}
