@@ -7,7 +7,7 @@ import "../styles/custom-styles.css";
 import React from "react";
 import App from "next/app";
 import Head from "next/head";
-import { Analytics, pageview } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/react";
 import Script from 'next/script';
 
 export default class MyApp extends App {
