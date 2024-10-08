@@ -35,7 +35,7 @@ class MyDocument extends Document {
 
           <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
           <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
-          <Script
+          <script
             id="gtag-consent-script"
             strategy="afterInteractive"
             dangerouslySetInnerHTML={{
