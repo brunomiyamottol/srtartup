@@ -5,21 +5,27 @@ import ScheduleADemo from "./ScheduleADemo";
 import GetSrtartedNow from "./GetStarted";
 
 
-const stateVideoURL = "https://app.kaaria.ai/#/login?createAccount=true"
-
+const stateVideoURL = "https://app.kaaria.ai/login?createAccount=true"
 
 
 export default function About() {
   const { t } = useTranslation();
-  function handleOpenModal() {
-    // setIsOpen(true);
 
-    window.open(stateVideoURL, "_blank");
-  }
+  function handleOpenModal() {
+    // Track the event before opening the modal
+    window.gtag('event', 'open_modal', {
+     event_category: 'User Interaction',
+     event_label: 'Video Modal',
+     value: 2,
+   });
+ 
+     window.open(stateVideoURL, "_blank");
+   }
+ 
 
   return (
     <section class="bg-white border-b py-8">
-      <div class="container max-w-5xl mx-auto m-8">
+      <div id="GetValuation" class="container max-w-5xl mx-auto m-8">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
           {t("startupValuationDetailsTitle")}
         </h2>
@@ -55,7 +61,7 @@ export default function About() {
                 onClick={handleOpenModal}
                 class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
               >
-                {"Start Your Free Trial"}
+                {"Start Your Free Trial."}
               </button>
             </div>
          </h3>
