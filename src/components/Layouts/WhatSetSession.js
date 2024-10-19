@@ -48,6 +48,14 @@ export default function WhatSetSession() {
           </div>
         </div>
 
+        {/* <form className="">
+          <input type="email" className="input-newsletter" placeholder="Enter email address" name="email" required />
+          <button type="submit"  className="default-btn">
+             SignUp
+          </button>
+        </form>  */}
+
+
         {/* <div className="mt-8">
           <h1 className="my-4 text-3xl font-bold text-black text-center">{t("startupValuationKaariaCommitment")}</h1>
           <p className="text-lg mb-8 text-black text-center">{t("startupValuationKaariaCommitmentDescription")}</p>

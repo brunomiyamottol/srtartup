@@ -65,7 +65,7 @@ export default function About() {
               </button>
             </div>
          </h3>
-          </div> 
+        </div> 
 
 
         <div class="flex flex-wrap sm:flex-row">
@@ -73,13 +73,13 @@ export default function About() {
               <h2 class="text-3xl text-center text-gray-800 font-bold leading-none mb-3">
                 {t("startupValuationYourVsMarket")}
               </h2>
-            <img style={{  maxWidth: "100%", maxHeight:"auto"}} src="/images/YourValuationVsMarketMatrics.png" />
+            <img style={{  maxWidth: "100%", maxHeight:"auto"}} src="/images/YourValuation.png" />
           </div>
           <div class="w-full sm:w-1/2 p-6 mt-6">
               <h2 class="text-3xl text-center text-gray-800 font-bold leading-none mb-3">
                 {t("startupValuationYourVsCompetitors")}
               </h2>
-            <img style={{  maxWidth: "100%", maxHeight:"auto"}} src="/images/YourValuationVsCompetitors.png" />
+            <img style={{  maxWidth: "100%", maxHeight:"auto"}} src="/images/GetAvgValBands.png" />
           </div>
           <div class="w-full sm:w-2/2 p-6 mt-6">
             <div class="align-middle">

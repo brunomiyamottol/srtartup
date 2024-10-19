@@ -1,6 +1,7 @@
 {
   "startupValationSection":"FOR STARTUPS",
-  "startupValuationWebsiteTitle1": "Fundraise Smarter with Kaaria",
+  "startupValuationWebsiteTitle1": "Get Your Startup Valued in Minutes",
+  "startupValuationWebsiteTitle1Subtitle":"Instant, Transparent, and Reliable Valuations to Drive Your Startup's Success.",
   "startupValuationWebsiteTitle2": "Start Free Trial Now!",
   "startupValuationWebsiteSubtitle": "Kaaria helps companies fundraise with confidence. Get your valuation, market benchmarks, and equity value advice all in one system.",
   "startupValuationSignUpCall": "SOLUTIONS FOR STARTUPS",
@@ -11,11 +12,16 @@
   "startupValuationBecomeAnEarlyAdopterMessage": "Simplify your valuation processes while maintaining flexibility and transparency.",
   "startupValuationBecomeAnEarlyAdopterMessageOne": "Empower founders by making valuation a key performance indicator. Keep startups engaged with personalized valuation reports, simplifying data collection and enhancing value at every step.",
   
-  "startupValuationDetailsTitle": "Get & Share Your Valuation Today!",
-  "startupValuationDetailsSubtitle": "A simple process that delivers unparalleled results",
+  "startupValuationWhyKaariaH1":"Why Kaaria?",
+  "startupValuationWhyKaariaH2":"Designed for Founders, Built for Growth",
+  "startupValuationWhyKaariaText1":"Kaaria gives you the power to understand your startup's true value using the most reliable data and trusted valuation methods. Whether you're looking to raise funds or simply understand your position, Kaaria makes valuation fast, easy, and clear.",
+  "":"",
+
+  "startupValuationDetailsTitle": "How It Works",
+  "startupValuationDetailsSubtitle": "With just three simple steps, you can access the information you need to negotiate confidently and make strategic decisions.",
   "startupValuationFreeTrialTitle": "Start your Free Trial!",
-  "startupValuationYourVsMarket": "YOUR  VALUATION   VS.  MARKET  MATRICS",
-  "startupValuationYourVsCompetitors": "YOUR VALUATION VS. SIMILAR COMPANIES",
+  "startupValuationYourVsMarket": "A MIX OF METHODS TO GET A REALISTIC BAND",
+  "startupValuationYourVsCompetitors": "GET AVERAGE VALUATION BANDS",
 
   
   "startupValuationDetailsMessageInnovation": "Instantly Download Your Valuation.",
