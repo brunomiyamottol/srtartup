@@ -1,6 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+
+const stateVideoURL = "https://app.kaaria.ai/login?createAccount=true"
+
 export default function WhatSetSession() {
   const { t } = useTranslation();
 
