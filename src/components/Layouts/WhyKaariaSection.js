@@ -33,7 +33,7 @@ export default function WhatSetSession() {
         </div>
         
         <div class="w-full sm:w-2/2 p-1 flex justify-center">
-            <img style={{ height: "30rem", width:"auto" }} src="/images/WhyKaariaSection/img1.png" />
+            <img style={{ height: "auto", width:"auto" }} src="/images/WhyKaariaSection/img1.png" />
         </div>
 
         <div  className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
