@@ -36,7 +36,7 @@ export default function About() {
 
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-2/2 p-1 flex justify-center">
-            <img style={{ height: "20rem", width:"auto" }} src="/images/GetYourValuation.png" />
+            <img style={{ height: "auto", width:"auto" }} src="/images/GetYourValuation.png" />
           </div>
 
           {/* <div class="w-full sm:w-1/2 p-6 mt-6">
