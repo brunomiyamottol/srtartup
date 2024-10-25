@@ -1,53 +1,32 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import dynamic from "next/dynamic";
+import 'react-modal-video/scss/modal-video.scss';
 
-const ModalVideo = dynamic(() => import("react-modal-video"), {
+// Dynamic import to disable server-side rendering
+const ModalVideoComponent = dynamic(() => import("react-modal-video"), {
   ssr: false,
 });
 
-// const VideoUrl = {
-//   ["en"]: "https://youtu.be/l2Kgl1meiUk?si=vjYI5f_Yin2SizDx",
-//   ["es"]: "https://app.kaaria.ai/#/login?createAccount=true",
-//   ["pt"]: "https://app.kaaria.ai/#/login?createAccount=true",
-// };
-
 export default function TakeAPeak() {
   const { t } = useTranslation();
+  const videoId = 'mU8YUV-amT8';  // Replace with the actual YouTube video ID
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;  // YouTube thumbnail URL
+  const [isOpen, setIsOpen] = useState(false);  // State to manage modal open/close
 
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [stateVideoURL, setStateVideoURL] = useState("");
+  useEffect(() => {
+    // Open the modal when the page loads
+    setIsOpen(true);
+  }, []);
 
-  // useEffect(() => {
-  //   const browserShortLanguage = navigator?.language?.substring(0, 2)?.toLowerCase();
-  //   const video = VideoUrl[browserShortLanguage ?? "en"] ?? VideoUrl["en"];
-
-  //   setStateVideoURL(video);
-  // }, []);
-
-  const videoId = 'l2Kgl1meiUk';  // Replace this with the actual YouTube video ID
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;  // Thumbnail URL
-
-  
-  const [isOpen, setIsOpen] = useState(false);  // useState for managing state
   const openModal = () => {
-    setIsOpen(true);  // Update state without 'this'
+    setIsOpen(true);
   };
-
-  // function handleOpenModal() {
-  //   setIsOpen(true);
-
-  //   window.open(stateVideoURL, "_blank");
-  // }
-
-  // function handleCloseModal() {
-  //   setIsOpen(false);
-  // }
 
   return (
     <>
       <div className="mt-5 flex justify-left">
-        <div className="w-full sm:w-full lg:w-4/5 lg:w-full py-6 flex flex-wrap justify-center" style={{ zIndex: 1 }}>
+        <div className="w-full sm:w-full lg:w-4/5 py-6 flex flex-wrap justify-center" style={{ zIndex: 1 }}>
           {/* YouTube video thumbnail preview */}
           <div
             onClick={(e) => { e.preventDefault(); openModal(); }}  // Make image clickable
@@ -69,12 +48,13 @@ export default function TakeAPeak() {
           </div>
         </div>
       </div>
-      <ModalVideo 
-          channel='youtube'
-          videoId='l2Kgl1meiUk?si=c--si1w2ZzZy6MTb'  // YouTube video ID goes here
-          isOpen={isOpen}  // Use state variable isOpen
-          onClose={() => setIsOpen(false)}  // Close the modal with setIsOpen
-        />
+
+      <ModalVideoComponent
+        channel="youtube"
+        videoId={videoId}  // Use dynamic video ID
+        isOpen={isOpen}  // Modal state controls visibility
+        onClose={() => setIsOpen(false)}  // Close the modal
+      />
     </>
   );
 }
