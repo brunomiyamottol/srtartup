@@ -25,7 +25,7 @@ export default function TakeAPeak() {
   //   setStateVideoURL(video);
   // }, []);
 
-  const videoId = 'l2Kgl1meiUk';  // Replace this with the actual YouTube video ID
+  const videoId = 'mU8YUV-amT8';  // Replace this with the actual YouTube video ID
   const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;  // Thumbnail URL
 
   
@@ -71,7 +71,7 @@ export default function TakeAPeak() {
       </div>
       <ModalVideo 
           channel='youtube'
-          videoId='l2Kgl1meiUk?si=c--si1w2ZzZy6MTb'  // YouTube video ID goes here
+          videoId='mU8YUV-amT8'  // YouTube video ID goes here
           isOpen={isOpen}  // Use state variable isOpen
           onClose={() => setIsOpen(false)}  // Close the modal with setIsOpen
         />
