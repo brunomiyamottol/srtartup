@@ -6,20 +6,25 @@ import GetSrtartedNow from "./GetStarted";
 // import ScheduleADemo from "./ScheduleADemo";
 
 
-const stateVideoURL = "https://app.kaaria.ai/#/login?createAccount=true"
+const stateVideoURL = "https://app.kaaria.ai/login?createAccount=true"
 
 export default function Banner() {
   const { t } = useTranslation();
 
   function handleOpenModal() {
-    // setIsOpen(true);
+   // Track the event before opening the modal
+   window.gtag('event', 'open_modal', {
+    event_category: 'User Interaction',
+    event_label: 'Video Modal',
+    value: 1,
+  });
 
     window.open(stateVideoURL, "_blank");
   }
 
   return (    
     <>
-      <div class="pt-24">
+      <div  class="pt-24">
         <div class="container px-4 mx-auto flex flex-wrap flex-col lg:flex-row items-center">
           <div class="w-full sm:w-full lg:w-2/5 py-6 flex  flex-wrap justify-center lg:justify-end" style={{ zIndex: 1 }}>
           <GetSrtartedNow />
@@ -29,12 +34,13 @@ export default function Banner() {
               {t("startupValuationWebsiteTitle1")} <br/>
 
             </h1>
+            <p className="text-gray-800 text-center px-6 mb-5">{t("startupValuationWebsiteTitle1Subtitle")}</p>
             <div className="mt-5 mb-6 flex justify-center">
               <button
                 onClick={handleOpenModal}
                 class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
               >
-                {"Start Free Trial"}
+                {"Get Your Free Valuation Now"}
               </button>
             </div>
             {/* <p class="text-sm md:text-lg mb-8">{t("startupValuationWebsiteSubtitle")}</p> */}

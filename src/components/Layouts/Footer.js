@@ -107,14 +107,14 @@ export default function Footer() {
                 </li> */}
                 <li className="mt-8 inline-block mr-2 md:block md:mr-0">
                   <div className="flex items-center">
-                    <span className="mr-2">{t("talkToUs")}</span>
+                    {/* <span className="mr-2">{t("talkToUs")}</span>
                     <a
                       href="https://api.whatsapp.com/send?phone=525580033038"
                       target="_blank"
                       className="no-underline hover:underline text-white-800 hover:text-pink-500"
                     >
                       <img src="/images/whatsapp.svg" style={{ height: 50 }} />
-                    </a>
+                    </a> */}
                   </div>
                 </li>
               </ul>
