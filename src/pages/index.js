@@ -12,6 +12,7 @@ import ForStartups from "../components/Layouts/ForStartups";
 import NewsUpdates from "../components/Layouts/NewsUpdates";
 import FooterSession from "../components/Layouts/FooterSession";
 import WhatSetSession from "../components/Layouts/WhatSetSession";
+import Pricing from "../components/Layouts/Pricing1"
 import HeaderStartups from "../components/StartUps/HeaderStartups";
 import GetFundedStartups from "../components/StartUps/GetFundedStartups";
 import HeaderInvestors from "../components/Investors/HeaderInvestors";
@@ -33,6 +34,7 @@ export default function Index() {
       <About />
 
       <WhatSetSession />
+      <Pricing />
       {/* <Counter /> */}
       {/* <HeaderStartups /> */}
       {/* <ForStartups /> */}

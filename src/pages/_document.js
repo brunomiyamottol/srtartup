@@ -101,6 +101,18 @@ class MyDocument extends Document {
           type="text/javascript"
         ></script>
           <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="2ab75663-4215-475a-b69d-46bd34e3c1b4" data-blockingmode="auto" type="text/javascript"></script>
+        
+          <script
+                id="clarity-script"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `(function(c,l,a,r,i,t,y){
+                        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                    })(window, document, "clarity", "script", "otlsxosvgu");`
+                }}
+            />
         </Head>
         <body
           className="leading-normal tracking-normal text-white gradient"
